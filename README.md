@@ -1,2 +1,2 @@
 # LunaSolar
-LunaSolar - Posição, Fases e Incidência Solar em Tempo Real  
+LunaSolar - Posição, Fases e Incidência Solar sobre a Lua, em Tempo Real  
