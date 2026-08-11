@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#spaceBg)"/>
+  
+  <!-- Sun Glow -->
+  <circle cx="170" cy="170" r="70" fill="url(#sunGlow)" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- Moon Body -->
+  <circle cx="280" cy="280" r="120" fill="url(#moonGrad)" filter="url(#glow)"/>
+  
+  <!-- Shadow Overlay creating crescent -->
+  <path d="M 280 160 A 120 120 0 1 0 400 280 A 100 100 0 1 1 280 160 Z" fill="#0f172a" opacity="0.85"/>
+  
+  <!-- Orbit Ring -->
+  <ellipse cx="256" cy="256" rx="200" ry="110" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="10 10" opacity="0.4" transform="rotate(-20 256 256)"/>
+</svg>

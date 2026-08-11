@@ -1,0 +1,6 @@
+
+> react-example@0.0.0 dev
+> tsx server.ts
+
+[LunaSolar] Servidor rodando na porta 3000
+[2m18:34:34[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/GlobalVisibilityMap.tsx, /src/components/AstroCalendar.tsx[22m

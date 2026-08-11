@@ -1,0 +1,6 @@
+{
+  "name": "LunaSolar - Posição e Fases em Tempo Real",
+  "description": "Aplicativo astronômico em tempo real para cálculo e visualização de posições do Sol e da Lua, iluminação e sombras lunares, mapa interativo de visibilidade global e visualização gráfica de ângulos de incidência solar.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
