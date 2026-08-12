@@ -4,7 +4,7 @@ import { createServer as createViteServer } from "vite";
 import * as Astronomy from "astronomy-engine";
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3004;
 
 app.use(express.json());
 
